@@ -1,3 +1,6 @@
+"""
+    Description: To reverse the stack using recursion
+"""
 class Stack:
     def __init__(self):
         self.items = []
