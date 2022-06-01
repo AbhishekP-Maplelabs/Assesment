@@ -26,6 +26,6 @@ STATIONS=int(input("Enter the number of stations: "))
 STOPS=int(input("Enter the number of stops: "))
 NUM = stopping_station(STATIONS, STOPS)
 if NUM != -1:
-    print(NUM)
+    print(f"The number of ways train stops is: {NUM}")
 else:
     print("Not Possible")
