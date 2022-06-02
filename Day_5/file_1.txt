@@ -1,0 +1,2 @@
+We will take the content of the file as input
+Find the frequency of each word
