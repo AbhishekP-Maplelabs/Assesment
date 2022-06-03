@@ -9,8 +9,8 @@ def decimal_to_binary(number):
     """
     num_list=[]
     while number>0:
-        dig=number%2
-        num_list.append(dig)
+        digit=number%2
+        num_list.append(digit)
         number=number//2
     num_list.reverse()
     print("Binary Equivalent is: ")
