@@ -20,11 +20,13 @@ def decimal_to_binary(number):
         if num_list[i] != num_list[len(num_list)-i-1]:
             return False
     return True
-
-
-NUMBER=int(input("Enter a number: "))
-RESULT=decimal_to_binary(NUMBER)
-if RESULT:
-    print("Binary value is palindrome")
-else:
-    print("Binary value is not palindrome")
+if __name__ == "__main__":
+    try:
+        NUMBER=int(input("Enter a number: "))
+        RESULT=decimal_to_binary(NUMBER)
+        if RESULT:
+            print("Binary value is palindrome")
+        else:
+            print("Binary value is not palindrome")
+    except Exception as e:
+        print("Enter valid input")
