@@ -1,0 +1,4 @@
+We will take the content of the file as input
+We will save each word in a list after removing spaces and punctuation from the input string
+Find the frequency of each word
+Print the word which has a maximum frequency
