@@ -13,16 +13,17 @@ def unique(list1):
     print(len(unique_list))
     for i in range(0,len(unique_list)):
         print(f"{unique_list[i]} :1")
-try:
-    NUMBER=int(input("Input number of words: "))
-    LIST=[]
-    for WORD in range(NUMBER):
-        WORD=input()
-        if WORD.isnumeric():
-            print("Input the words: ")
-            sys.exit()
-        else:
-            LIST.append(WORD)
-    unique(LIST)
-except Exception as e:
-    print("Enter valid input")
+if __name__ == "__main__":
+    try:
+        NUMBER=int(input("Input number of words: "))
+        LIST=[]
+        for WORD in range(NUMBER):
+            WORD=input()
+            if WORD.isnumeric():
+                print("Input the words: ")
+                sys.exit()
+            else:
+                LIST.append(WORD)
+        unique(LIST)
+    except Exception as e:
+        print("Enter valid input")

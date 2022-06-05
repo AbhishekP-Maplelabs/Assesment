@@ -21,8 +21,9 @@ def word_length(number):
         if len(string)==string_length:
             string_list.append(string)
     print(f"After extracting strings of specified length from the said list: {string_list}")
-try:
-    NUMBER=int(input("Enter the number of words in the list: "))
-    word_length(NUMBER)
-except Exception as e:
-    print("Enter the valid input")
+if __name__ == "__main__":
+    try:
+        NUMBER=int(input("Enter the number of words in the list: "))
+        word_length(NUMBER)
+    except Exception as e:
+        print("Enter the valid input")
