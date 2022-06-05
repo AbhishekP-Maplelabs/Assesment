@@ -6,7 +6,7 @@ def toggle_case(word):
     """
     this function will interchange the case of the charecters in the string.
     """
-    regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
+    regex = re.compile('[@_!#$%^&*()<>?//|}{~:]')
     if regex.search(word) is None:
         string_1 = str()
         for i in word:
@@ -16,10 +16,11 @@ def toggle_case(word):
             else:
                 i = i.upper()
                 string_1 = string_1 + i
-        return string_1
-try:
-    STRING=input("Please enter the string: ")
-    result=toggle_case(STRING)
-    print(STRING+"after changing the case is: "+result)
-except Exception as e:
-    print("Please enter the proper string ")
+    return string_1
+if __name__ == "__main__":
+    try:
+        STRING=input("Please enter the string: ")
+        result=toggle_case(STRING)
+        print(STRING+"after changing the case is: "+result)
+    except Exception as e:
+        print("Please enter the proper string ")
