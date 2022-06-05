@@ -31,17 +31,18 @@ def next_date(year,month,day):
             year += 1
         else:
             month += 1
-    print(f"The next date is [yyyy-mm-dd] %d-%d-%d {year, month, day}")
-try:
-    YEAR = int(input("Input a year: "))
-    MONTH = int(input("Input a month [1-12]: "))
-    if MONTH>12:
-        print("Enter valid month")
-    else:
-        DAY = int(input("Input a day [1-31]: "))
-        if DAY>31:
-            print("Enter the valid day")
+    print(f"The next date is [yyyy-mm-dd] {year, month, day}")
+if __name__ == "__main__":
+    try:
+        YEAR = int(input("Input a year: "))
+        MONTH = int(input("Input a month [1-12]: "))
+        if MONTH>12:
+            print("Enter valid month")
         else:
-            next_date(YEAR,MONTH,DAY)
-except Exception as e:
-    print("Enter the valid inputs")
+            DAY = int(input("Input a day [1-31]: "))
+            if DAY>31:
+                print("Enter the valid day")
+            else:
+                next_date(YEAR,MONTH,DAY)
+    except Exception as e:
+        print("Enter the valid inputs")
