@@ -14,7 +14,6 @@ def file_name(directory):
     return files_available
 if __name__=='__main__':
     try:
-        #PATH = 'D:/Work/Practice/module_1/Module_2/assesment/Day_5'
         PATH=input("Enter the path of the destination of files")
         result=file_name(PATH)
         print(f" The file is : \n{result}")
