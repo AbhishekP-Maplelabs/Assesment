@@ -17,7 +17,7 @@ def positive_and_negative_numbers(num_tuple):
     print(f"Count of negative numbers is: {negative_count}")
 if __name__ == "__main__":
     try:
-        NUMBER=int(input("Enter the length of list"))
+        NUMBER=int(input("Enter the length of list: "))
         LIST=[]
         print("Enter the numbers:")
         for number in range(NUMBER):
