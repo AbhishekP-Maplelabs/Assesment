@@ -1,0 +1,10 @@
+Coin:H
+Coin:T
+Coin:H
+Coin:H
+Coin:H
+Coin:T
+Coin:H
+Coin:T
+Coin:H
+Coin:H
