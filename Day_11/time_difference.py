@@ -23,6 +23,7 @@ if __name__ == "__main__":
     try:
         NOW = datetime.now()
         CURRENT_TIME = NOW.strftime("%H:%M")
+        CURRENT_HOUR=int(CURRENT_TIME[:2])
         if int(CURRENT_TIME[:2])>12:
             CURRENT_HOUR=int(CURRENT_TIME[:2])-12
         CURRENT_MINUTE=int(CURRENT_TIME[2:].replace(":",""))
