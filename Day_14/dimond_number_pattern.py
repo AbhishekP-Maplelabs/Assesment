@@ -21,5 +21,9 @@ def dimond_pattern(rows):
         for j in range(0, i + 1):
             print(i+1, end=" ")
         print("")
-ROWS=int(input("Enter number of rows between 2 and 9 : "))
-dimond_pattern(ROWS)
+if __name__ == "__main__":
+    try:
+        ROWS=int(input("Enter number of rows between 2 and 9 : "))
+        dimond_pattern(ROWS)
+    except ValueError as v:
+        print("Enter valid input")
