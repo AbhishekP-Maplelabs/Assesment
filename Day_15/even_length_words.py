@@ -9,7 +9,7 @@ def even_length_words(string):
     for word in string:
         if len(word) % 2 == 0:
             even_word_list.append(word)
-    print(f"the even length words from the string are: {even_word_list}")
+    print(f"The even length words from the string are: {even_word_list}")
 if __name__ == "__main__":
     try:
         STRING=input("Enter the string: ").split()

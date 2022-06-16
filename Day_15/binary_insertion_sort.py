@@ -25,13 +25,16 @@ def binary_search(num_list, key, start, end):
     if num_list[mid] > key:
         return binary_search(num_list, key, start, mid)
     return mid
-
-NUMBER=int(input("Enter the length of list: "))
-LIST = []
-for num in range(NUMBER):
-    LIST.append(int(input()))
-LENGTH = len(LIST)
-insertion_sort(LIST)
-print("Sorted array is:")
-for number in range(LENGTH):
-    print(LIST[number],end=" ")
+if __name__ == "__main__":
+    try:
+        NUMBER=int(input("Enter the length of list: "))
+        LIST = []
+        for num in range(NUMBER):
+            LIST.append(int(input()))
+        LENGTH = len(LIST)
+        insertion_sort(LIST)
+        print("Sorted array is:")
+        for number in range(LENGTH):
+            print(LIST[number],end=" ")
+    except ValueError as v:
+        print("Enter valid input")
