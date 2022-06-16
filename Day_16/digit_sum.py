@@ -13,8 +13,6 @@ def odd_even_sum(input_number):
             even_sum+=digit
         else:
             odd_sum+=digit
-    print(even_sum)
-    print(odd_sum)
     difference=odd_sum-even_sum
     return difference
 if __name__ == "__main__":
