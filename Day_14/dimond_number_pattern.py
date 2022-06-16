@@ -9,6 +9,7 @@ def dimond_pattern(rows):
     for row in range(rows):
         for j in range(upper):
             print(end=" ")
+            j+=1
         upper = upper - 1
         for j in range(0, row + 1):
             print(row+1, end=" ")
