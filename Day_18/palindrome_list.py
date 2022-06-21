@@ -45,17 +45,21 @@ def is_palindrome(llist):
     """
     start = llist.head
     end = llist.last_node
-    while (start not in end,end.next):
+    while start not in (end,end.next):
         if start.data != end.data:
             return False
         start = start.next
         end = llist.get_prev_node(end)
     return True
 num_list = LinkedList()
-data_list = input('Please enter the elements in the linked list: ').split()
-for number in data_list:
-    num_list.append(int(number))
-if is_palindrome(num_list):
-    print('The linked list is palindromic.')
-else:
-    print('The linked list is not palindromic.')
+if __name__ == "__main__":
+    try:
+        data_list = input('Please enter the elements in the linked list: ').split()
+        for number in data_list:
+            num_list.append(int(number))
+        if is_palindrome(num_list):
+            print('The linked list is palindromic.')
+        else:
+            print('The linked list is not palindromic.')
+    except ValueError as v:
+        print("Enter valid input")

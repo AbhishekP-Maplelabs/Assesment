@@ -41,13 +41,17 @@ class LinkedList:
             temp = temp.next
         return False
 if __name__ == "__main__":
-    NUMBER=int(input("Enter the length of list: "))
-    linked_list = LinkedList()
-    print("push the numbers")
-    for num in range(NUMBER):
-        linked_list.push(int(input()))
-linked_list.head.next = linked_list.head
-if linked_list.detect_loop():
-    print("Loop found")
-else:
-    print("No Loop ")
+    try:
+        NUMBER=int(input("Enter the length of list: "))
+        linked_list = LinkedList()
+        print("push the numbers")
+        for num in range(NUMBER):
+            linked_list.push(int(input()))
+        linked_list.head.next = linked_list.head
+        if linked_list.detect_loop():
+            print("Loop found")
+        else:
+            print("No Loop ")
+    except ValueError as v:
+        print("Enter valid input")
+        
